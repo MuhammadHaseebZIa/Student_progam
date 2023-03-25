@@ -1,0 +1,21 @@
+fun main(){
+    println("-----------------------------------------")
+    println("\t\t Main Menu")
+    println("-----------------------------------------")
+    println("1-Add student")
+    println("2-Search student")
+    println("3-Display students")
+    println("4-Delete Students")
+    println("5-Sort students")
+    var inputop= readLine()?.toInt()
+    when(inputop){
+         1 -> addStudent()
+         2 ->searchStudent()
+         3->displayStudent()
+         4->deleteStudent()
+         5->sortStudent()
+        else->{
+            println("You entered a wrong option")
+        }
+    }
+}
